@@ -1,0 +1,247 @@
+/* BACK TO TOP */
+.back-to-top {
+  cursor: pointer;
+  right: 1rem;
+  bottom: 1rem;
+  position: fixed;
+  transition: all 0.4s;
+  background: none;
+}
+
+.show-back-top.back-to-top {
+  animation-name: btnIncome 0.5ms;
+  display: block;
+}
+@keyframes btnIncome {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes btnExit {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/* 1140px */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.container-small {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 8rem;
+  row-gap: 4rem;
+}
+
+.grid-col-1 {
+  column-gap: 5rem;
+  row-gap: 4rem;
+  grid-template-columns: 1fr;
+}
+.grid-col-2 {
+  column-gap: 5rem;
+  row-gap: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 0.2rem;
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  column-gap: 1.3rem;
+  row-gap: 1.3rem;
+}
+.grid-col-6 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  animation: ease-in 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.pd-left-right-xm {
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.pd-top-xm {
+  padding-top: 1.5rem;
+}
+.pd-top-medium {
+  padding-top: 3rem;
+}
+.pd-bottom-xm {
+  padding-bottom: 1.5rem;
+}
+.mg-top-xm {
+  margin-top: 1.5rem;
+}
+.pd-left-xm {
+  padding-left: 1rem;
+}
+.mg-bottom-xm {
+  margin-bottom: 1.5rem;
+}
+.mg-bottom-medium {
+  margin-bottom: 3rem;
+}
+.mg-top-small {
+  margin-top: 3rem;
+}
+.mg-top-medium {
+  margin-top: 5rem;
+}
+.mg-top-big {
+  margin-top: 10rem;
+}
+.pd-bottom-small {
+  padding-bottom: 3rem;
+}
+
+.mg-top-medium {
+  margin-top: 6rem;
+  margin-top: 4.5rem;
+}
+
+.heading--primary,
+.heading--secondary {
+  font-weight: 700;
+  color: var(--primary-color-one);
+  letter-spacing: -0.5px;
+}
+.heading--primary {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+  color: var(--primary-color-one);
+  text-transform: capitalize;
+}
+.heading--secondary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 5.2rem;
+}
+
+.heading--tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.sub--heading {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.5px;
+  color: var(--primary-color-four);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.d-flex-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.svg-xm {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.svg-small {
+  width: 4rem;
+  height: 4rem;
+}
+.svg-medium {
+  width: 8rem;
+  height: 8rem;
+}
+.svg-l {
+  width: 10rem;
+  height: 10rem;
+}
+
+.svg-round-bg {
+  background-color: var(--primary-color-three);
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color-one);
+  fill: var(--primary-color-two);
+}
+.backTop {
+  padding: 0.9rem;
+  border-radius: 50%;
+  background: var(--primary-color-one);
+  fill: var(--primary-color-two);
+}
+.svg-white {
+  fill: var(--color-white);
+}
+
+/* MOBILE-NAV */
+
+.nav-toggle {
+  display: block;
+}
+/* STICKY NAVIGATION */
+.nav.sticky {
+  position: fixed;
+  background-color: var(--primary-color-two);
+  top: 0;
+  box-shadow: 0 5rem 5.2rem rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+/* icon-storefront */
+.svg-coffee {
+  fill: var(--primary-color-one);
+}
+
+/* PROGRESSIVE LOADING */
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(2.5rem);
+}
+
+#temstimonail,
+#coffee {
+  transition: all ease-out 0.5ms;
+}
